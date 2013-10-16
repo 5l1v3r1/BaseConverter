@@ -1,0 +1,29 @@
+body {
+    font-family: Avenir, sans-serif;
+}
+
+#base-converter {
+    display: inline-block;
+}
+
+#base-converter select, #base-converter input {
+    width: 100%;
+}
+
+#base-converter th {
+    padding-left: 10px;
+}
+
+#base-converter td {
+    padding-right: 10px;
+}
+
+span.answer {
+    font-style: oblique;
+    font-weight: normal;
+}
+
+span.error {
+    font-weight: normal;
+    color: #D00;
+}

@@ -1,0 +1,10 @@
+#multiplication-table-container table {
+    border-collapse: collapse;
+    border: 1px solid;
+}
+
+#multiplication-table-container td, #multiplication-table-container th {
+    border: 1px solid;
+    padding: 3px 0px 3px 0px;
+    width: 25px;
+}
