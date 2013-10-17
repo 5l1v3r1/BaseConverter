@@ -1,7 +1,10 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <title>Base Converter</title>
         <link rel="stylesheet" type="text/css" href="ConverterForm.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="MultiplicationTable.css" media="screen" />
+        <meta charset="UTF-8" />
         <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="Baseless.js"></script>
         <script type="text/javascript" src="ConverterForm.js"></script>
@@ -13,8 +16,8 @@
             <table>
                 <tr>
                     <td>Number:</td>
-                    <td><input type="text" id="number-input"></input></td>
-                    <th align="left">
+                    <td><input type="text" id="number-input"></td>
+                    <th style="text-align: left">
                         <div id="conversion-result"></div>
                     </th>
                 </tr>
@@ -27,7 +30,7 @@
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
-                            <option value="5" selected="1">5</option>
+                            <option value="5" selected>5</option>
                             <option value="6">6</option>
                             <option value="7">7</option>
                             <option value="8">8</option>
@@ -41,11 +44,11 @@
                         <select id="source-base" class="base-select">
                             <option value="BIN_PLACES">Binary</option>
                             <option value="OCT_PLACES">Octal</option>
-                            <option value="DEC_PLACES" selected="1">Decimal</option>
+                            <option value="DEC_PLACES" selected>Decimal</option>
                             <option value="HEX_PLACES">Hexadecimal</option>
                         </select>
                     </td>
-                    <th rowspan="2" align="left">
+                    <th rowspan="2" style="text-align: left">
                         <button onclick="converterFormSwap()">Swap bases</button>
                     </th>
                 </tr>
@@ -56,7 +59,7 @@
                             <option value="BIN_PLACES">Binary</option>
                             <option value="OCT_PLACES">Octal</option>
                             <option value="DEC_PLACES">Decimal</option>
-                            <option value="HEX_PLACES" selected="1">Hexadecimal</option>
+                            <option value="HEX_PLACES" selected>Hexadecimal</option>
                         </select>
                     </td>
                 </tr>
@@ -70,7 +73,7 @@
                 <option value="BIN_PLACES">Binary</option>
                 <option value="OCT_PLACES">Octal</option>
                 <option value="DEC_PLACES">Decimal</option>
-                <option value="HEX_PLACES" selected="1">Hexadecimal</option>
+                <option value="HEX_PLACES" selected>Hexadecimal</option>
             </select>
             <table id="multiplication-table"></table>
         </div>
